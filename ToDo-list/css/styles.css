@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
 
 :root {
   --radius: 15px;
-  --app-widht: 600px;
+  --app-width: 600px;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -15,14 +14,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url(../images/bg2.jpg) center;
+  background: url("bg2.jpg") center;
   background-size: cover;
 }
 
 .app {
-  color: hsla(212, 67%, 24%, 0.774);
-  background-color: #ffffff44;
-  width: var(--app-widht);
+  color: #ffffffb0;
+  background-color: #ffffff21;
+  width: var(--app-width);
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: 0px 15px 40px -20px black;
@@ -34,30 +33,29 @@ body {
   font-size: 28px;
 }
 
-.todo__input {
+.todo-input {
   width: 100%;
   margin-bottom: 2rem;
   border: none;
   border-radius: var(--radius);
   padding: 1rem 1.5rem;
   font-size: 20px;
-  background-color: #f4f4f46c;
+  background-color: #f4f4f425;
   color: white;
 }
-
-.todo__input::placeholder {
+.todo-input::placeholder {
   color: #ffffff70;
 }
 
 .todos,
-.completed__todos,
-.uncompleted__todos {
+.completed-todos,
+.uncompleted-todos {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-.todo__item {
+.todo-item {
   background-color: #f4f4f4bd;
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
@@ -67,33 +65,33 @@ body {
   color: black;
 }
 
-.todo__item span {
+.todo-item span {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-.todo__item input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+.todo-item input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
   accent-color: lime;
 }
-.todo__item a {
+.todo-item a {
   color: #555555;
 }
 
-.todo__item a svg {
+.todo-item a svg {
   width: 20px;
   height: 20px;
   pointer-events: none;
 }
 
-.completed__todos .todo__item {
+.completed-todos .todo-item {
   background-color: #74c674;
   text-decoration: line-through;
 }
 
-.completed__title {
+.completed-title {
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 10px;
