@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("/images/bg2.jpg") center;
+  background: url("../images/bg2.jpg") center;
   background-size: cover;
 }
 
@@ -24,7 +24,7 @@ body {
   width: var(--app-width);
   border-radius: var(--radius);
   padding: 2rem;
-  box-shadow: 0px 15px 40px -20px black;
+  box-shadow: 0 15px 40px -20px black;
 }
 
 .app h1 {
